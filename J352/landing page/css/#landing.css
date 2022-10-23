@@ -1,0 +1,101 @@
+/*
+
+font-family: 'Barlow Semi Condensed' , sans-serif;
+
+font-family: 'orbitron' , sans-serif;
+
+pink - F8DCD1
+dark - 664c4B
+black - 000000
+
+*/
+
+body {
+    background-color: #FAF7F3;
+    font-family: 'Barlow Semi Condensed' ,  sans-serif;
+    color: #664C4B;
+    font-size: 18px;
+
+}
+
+h1, 
+.navbar-brand {
+    font-size: 3em;
+    font-family: 'Orbitron' , sans-serif;
+    text-transform: lowercase;
+}
+
+.menu a, 
+a, 
+.address
+.address a;hover{
+
+        text-align: none;
+        text-transform: upercase;
+        color: #664C4B;
+        display: block;
+        letter-spacing: .1em;
+}
+
+.menu,
+.menu a {
+    background-color: black;
+    padding: 0 .25em; 
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.address {
+    font-size: .8em;
+}
+
+.blurb {
+    text-align: justify;
+}
+
+footer {
+    font-family: 'Barlow Semi Condensed' , sans-serif;
+    font-size: .8em;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+@media (max-width:450px){
+
+.blurb{
+    margin: 2em 0 0 0;
+}
+
+.menu,
+.address,
+footer {
+    margin: 2em 0;
+}
+
+.text-end {
+    display: inline;
+}
+
+.menu{
+    padding: 0 0 0 .7em;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    text-align: center;
+    display: block;
+}
+
+}
+
+@media (min-width:450px) {
+    .mobile-only {
+        display: none;
+        text-align: center;
+    }
+}

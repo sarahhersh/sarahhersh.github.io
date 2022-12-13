@@ -24,6 +24,43 @@ h1 {
     font-weight: 300;
 }
 
+h2 {
+  font-family: 'work sans', sans-serif;
+  text-align: center;
+}
+
+/* Two image containers (use 50% for two) */
+.column {
+    float: center;
+    width: 50%;
+    margin-right:auto;
+    margin-left: auto; 
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.thumbnail { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+    } 
+    
+    /*change the number below to scale to the appropriate size*/ 
+    .thumbnail:hover { 
+    transform: scale(1.5); 
+    
+    }
 
 img {
     display: block;
@@ -45,7 +82,7 @@ header {
     align-items: center;
 }
 
-header > div {
+header>div {
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -62,10 +99,9 @@ header > div {
     background-color: #eaeaea;
 }
 
-.container-inner {
-    max-width: 750px;
-    margin: auto;
-}
+
+
+
 
 @media (max-width: 800px) {
     header {

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me!</title>
+    <meta name="description" content="Description goes here">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="clips.html">Clips</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contactme.html">Contact</a></li>
+    </ul>
+
+
+    <div class="container">
+        <form action="mail.php" method="post" enctype="multipart/form-data">
+
+         
+
+            <label for="fname">First Name</label>
+            <input type="text" id="name" name="first name" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="name" name="last name" placeholder="Your last name..">
+
+            <label for="pnumber">Phone Number</label>
+            <input type="text" id="pnumber" name="phone number" placeholder="Your phone number..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
